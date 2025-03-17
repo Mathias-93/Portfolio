@@ -1,13 +1,161 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    scroll-behavior: smooth;
 }
 
-html {
-    padding: 10px;
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-li {
-    list-style: none;
+header,
+main,
+footer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav i {
+    font-size: 1.3rem;
+}
+
+main,
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 4rem;
+}
+
+section {
+    gap: 1rem;
+}
+
+.intro-header p {
+    padding-top: 0.25rem;
+}
+
+.intro-description {
+    max-width: 500px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.link-arrow {
+    color: var(--color-link);
+    transform: rotate(-45deg);
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-card>div:first-of-type {
+    flex: 1;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.25rem 0;
+}
+
+.tech-list div {
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small);
+}
+
+.tech-list p {
+    font-size: 0.8rem;
+}
+
+@media (min-width: 640px) {
+    .project-card {
+        flex-direction: row;
+    }
+
+    .project-card .img-div {
+        max-width: 30%;
+    }
+}
+
+.locations-div {
+    display: flex;
+    gap: 10px;
+}
+
+.location-icon {
+    font-size: 1.5rem;
+    color: rgb(187, 4, 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconss {
+    font-size: 2rem;
+}
+
+.fa-github {
+    color: black;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+    max-width: 150px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer:hover {
+    text-decoration: underline;
 }

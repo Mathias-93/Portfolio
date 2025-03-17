@@ -1,48 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Portfolio</title>
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias' Web Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a target="_blank" href="https://www.github.com"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+            <a target="_blank" href="https://github.com/Mathias-93"><i class="fa-brands fa-github iconss"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/mathias-holmqvist-486990180/"><i
+                    class="fa-brands fa-linkedin iconss"></i></a>
+        </nav>
     </header>
     <main>
-      <section>
-        <div class="intro-header"></div>
-      </section>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm Mathias</h1>
+                <p>Software and Web Developer</p>
+            </div>
+            <h5 class="intro-description">
+              Hi, I'm Mathias, a software and web developer based in Sweden. I specialize in web development, working with technologies like JavaScript, ReactJS, Next.js, Express, and Python. I enjoy building fun and efficient applications focusing on both frontend and backend development.
+            </h5>
+            <h2>Location</h2>
+            <div class="locations-div">
+                <i class="fa-solid fa-location-dot location-icon"></i>
+                <h3>Kalmar, Sweden</h3>
+            </div>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:iwbsc2@gmail.com">
+                    Email me
+                </a>
+                <a target="_blank" href="https://github.com/Mathias-93">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/mathias-holmqvist-486990180/">LinkedIn</a>
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>ReactJS | NextJS | NodeJS & ExpressJS</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Data analysis | Pygame</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>TailwindCSS | Firebase | PostgreSQL | GIT
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Lastest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <h4>RainCheck Weather</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>CSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                              <p>TailwindCSS</p>
+                          </div>
+                        </div>
+                        <p>A simple weather app!
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://raincheckweatherapp.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/Mathias-93/RainCheck">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                      <a target="_blank" href="https://raincheckweatherapp.netlify.app/" >
+                        <img class="big-img"
+                            src="./public/RainCheck.png"
+                            alt="mathias-thumbnail" />
+                      </a>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>Jan 24, 2025</p>
+                        <h4>Pokedex</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>HTML</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>CSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <p>A super handy pokedex for looking up your favourite pokémon!
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://best-pokemon-search-app.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/Mathias-93/Pokedex">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                      <a target="_blank" href="https://best-pokemon-search-app.netlify.app/">
+                        <img class="big-img"
+                        src="./public/Pokedex.png"
+                        alt="mathias-thumbnail" />
+                      </a>
+                        
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <h4>Iron Church (in development)</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>PostgreSQL</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NodeJS & ExpressJS</p>
+                            </div>
+                        </div>
+                        <p>One place for all your workouts and workout tracking, complete with authentication and customizable content!</p>
+                        <div class="project-links">
+                            <a target="_blank" href="">Not live yet</a>
+                            <a target="_blank" href="https://github.com/Mathias-93/gym-app">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/expenny.png?raw=true"
+                            alt="smoljames-thumbnail" />
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-      <p>
-        By
-        <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          >Mathias</a
-        >
-      </p>
+            <a href="#" class="footer" id="back-to-top">
+                <h4>Back to top</h4>
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
     </footer>
-    <script></script>
-  </body>
+    
+</body>
+
 </html>
